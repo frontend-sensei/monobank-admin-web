@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Monobank | Web</title>
+	<link href="https://fonts.googleapis.com/css?family=Tajawal:400,700" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<!-- amCharts javascript sources -->
+	<script type="text/javascript" src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+	<script type="text/javascript" src="https://www.amcharts.com/lib/3/serial.js"></script>
+	<!-- amCharts javascript code -->
+	<script type="text/javascript">
+			AmCharts.makeChart("chartdiv",
+				{
+					"type": "serial",
+					"columnSpacing": 0,
+					"columnWidth": 0,
+					"autoMarginOffset": 5,
+					"marginBottom": 7,
+					"marginTop": 22,
+					"startDuration": 1,
+					"accessible": false,
+					"classNamePrefix": "",
+					"fontSize": 10,
+					"handDrawScatter": 1,
+					"path": "",
+					"percentPrecision": 0,
+					"precision": 0,
+					"processCount": 999,
+					"theme": "default",
+					"categoryAxis": {
+						"autoRotateAngle": -90,
+						"gridPosition": "start",
+						"axisAlpha": 0,
+						"axisThickness": 0,
+						"gridAlpha": 0,
+						"gridCount": 0,
+						"labelRotation": -90,
+						"labelsEnabled": false,
+						"minorGridAlpha": 0,
+						"offset": -1,
+						"tickLength": 230
+					},
+					"trendLines": [],
+					"graphs": [
+						{
+							"balloonColor": "#191919",
+							"balloonText": "[[title]] of [[category]]:[[value]]",
+							"bulletAlpha": 0,
+							"bulletBorderColor": "#FFFF00",
+							"bulletColor": "#F41D1D",
+							"color": "undefined",
+							"columnWidth": 1,
+							"cursorBulletAlpha": 0,
+							"fillColors": "#0000FF",
+							"hideBulletsCount": 6,
+							"id": "AmGraph-1",
+							"labelOffset": 1,
+							"legendAlpha": 0,
+							"lineColor": "#4682F1",
+							"lineThickness": 3,
+							"minDistance": 0,
+							"negativeFillAlphas": 0,
+							"showBalloon": false,
+							"title": "graph 1",
+							"topRadius": 0,
+							"type": "smoothedLine",
+							"valueField": "balance"
+						}
+					],
+					"guides": [],
+					"valueAxes": [
+						{
+							"axisTitleOffset": 8,
+							"id": "ValueAxis-1",
+							"autoRotateAngle": -90,
+							"axisAlpha": 0,
+							"axisColor": "#ED2424",
+							"color": "#F2F2F2",
+							"fillColor": "#000000",
+							"firstDayOfWeek": 0,
+							"gridAlpha": 1,
+							"gridColor": "#F2F2F2",
+							"minHorizontalGap": 77,
+							"minorGridAlpha": 0,
+							"title": "",
+							"titleBold": false
+						},
+						{
+							"axisTitleOffset": 13,
+							"id": "ValueAxis-2",
+							"position": "bottom",
+							"titleRotation": -1
+						}
+					],
+					"allLabels": [],
+					"balloon": {
+						"adjustBorderColor": false,
+						"animationDuration": 0,
+						"borderAlpha": 0,
+						"disableMouseEvents": false,
+						"fadeOutDuration": 0,
+						"fillAlpha": 0,
+						"fixedPosition": false,
+						"offsetX": 0,
+						"shadowAlpha": 0
+					},
+					"titles": [],
+					"dataProvider": [
+						{
+							"balance": "17"
+						},
+						{
+							"balance": "26"
+						},
+						{
+							"balance": "24"
+						},
+						{
+							"balance": "32"
+						},
+						{
+							"balance": "29"
+						},
+						{
+							"balance": "31"
+						},
+						{
+							"balance": "25.6"
+						},
+						{
+							"balance": "28.5"
+						},
+						{
+							"balance": "27"
+						},
+						{
+							"balance": "28"
+						}
+					]
+				}
+			);
+		</script>
+</head>
+<body>
+
+	<header class="fl jc-sb a-i-c">
+
+		<div class="logo">
+			<a href="#" class="logo_text fl">
+				<span class="logo-text b-t w-t">monobank</span>
+				<span class="logo-text b-t w-t">|</span>
+				<span class="t14 g-t">Web</span>
+			</a>
+		</div>
+		<div class="currency fl upp-t t11 g-t">
+			<div class="cur fl">
+				<span>usd</span>
+				<span>27.03</span>
+				<i class="fas fa-angle-down red-i"></i>
+			</div>
+			<span class="slesh">/</span>
+			<div class="cur fl">
+				<span>eur</span>
+				<span>32.60</span>
+				<i class="fas fa-angle-up green-i"></i>
+			</div>
+			<span class="slesh">/</span>
+			<div class="cur fl">
+				<span>btc</span>
+				<span>250648</span>
+				<i class="fas fa-angle-up green-i"></i>
+			</div>
+		</div>
+		<div class="buttons a-i-c fl upp-t t11">
+			<a href="#" class="w-t fl"><span>money</span><span>transfer</span></a>
+			<a href="#" class="w-t fl"><span>charge</span><span>phone</span></a>
+			<a href="#" class="w-t fl"><span>replenish</span><span>card</span></a>
+		</div>
+		<div class="profile">
+			<div class="hello a-i-c fl g-t t14">
+				<span class="he">Hello,</span><span class="he">Nik!</span>
+				<a href="#">
+					<div class="prof">
+						<div class="search">
+							<img src="img/search.png" alt="search" width="18px" height="18px">
+						</div>
+						<div class="photo">
+							<div class="op">
+								<div class="back-indi">
+									<div class="red-indi"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+	</header>
+	
+	<!-- MAIN SECTION -->
+	<main class="fl">
+
+		<section class="aside fl jc-sb">
+			<div class="menu">
+				<div class="fl item w-t cur-poin">
+					<div class="fl menu_icon">
+						<img src="img/menu/home.png" alt="Dashboard" width="30px" height="30px">
+					</div>
+					<p>Dashboard</p>
+				</div>
+				<div class="fl item w-t cur-poin">
+					<div class="fl menu_icon">
+						<img src="img/menu/pie-chart.png" alt="Transactions" width="35px" height="35px">
+					</div>
+					<p>Transactions</p>
+				</div>
+				<div class="fl item w-t cur-poin">
+					<div class="fl menu_icon">
+						<img src="img/menu/id-card.png" alt="Accounts/cards" width="34px" height="29px">
+					</div>
+					<p>Accounts/Cards</p>
+				</div>
+				<div class="fl item w-t cur-poin">
+					<div class="fl menu_icon">
+						<img src="img/menu/copy.png" alt="Loans/Deposits" width="30px" height="36px">
+					</div>
+					<p>Loans/Deposits</p>
+				</div>
+				<div class="fl item w-t cur-poin">
+					<div class="fl menu_icon">
+						<img src="img/menu/piggy-bank.png" alt="Cashback" width="35px" height="33px">
+					</div>
+					<p>Cashback</p>
+				</div>
+				<div class="fl item w-t cur-poin">
+					<div class="fl menu_icon">
+						<img src="img/menu/money.png" alt="Bank services" width="34px" height="32px">
+					</div>
+					<p>Bank services</p>
+				</div>
+			</div>
+			<div class="fl support w-t cur-poin">
+				<div class="fl menu_icon">
+					<img src="img/menu/support.png" alt="Support" width="33px" height="33px">
+				</div>
+				<p>Support</p>
+			</div>
+		</section>
+
+		<section class="main_sec">
+			
+			<div class="cards w-t">
+
+				<div class="card">
+					<div class="colv">
+						<span class="t24">150 000</span><span class="card-val upp-t">uah</span>
+						<a href="#" class="edit"><img src="img/cards/pen.png" alt="edit"></a>
+					</div>
+					<div class="card-num jc-sb g-t fl">
+						<span>2123</span><span>8732</span><span>2347</span><span>3478</span>
+					</div>
+					<div class="srok jc-sb fl">
+						<span class="t14 g-t">07/20</span>
+						<img src="img/cards/mastercard.png" alt="mastercard">
+					</div>
+				</div>
+				
+				<div class="card">
+					<div class="colv">
+						<span class="t24">12 180</span><span class="card-val upp-t">usd</span>
+						<a href="#" class="edit"><img src="img/cards/pen.png" alt="edit"></a>
+					</div>
+					<div class="card-num jc-sb g-t fl">
+						<span>8346</span><span>5248</span><span>6232</span><span>7813</span>
+					</div>
+					<div class="srok jc-sb fl">
+						<span class="t14 g-t">10/24</span>
+						<img src="img/cards/visa.png" alt="visa">
+					</div>
+				</div>
+				
+				<div class="card">
+					<div class="colv">
+						<span class="t24">8 305</span><span class="card-val upp-t">eur</span>
+						<a href="#" class="edit"><img src="img/cards/pen.png" alt="edit"></a>
+					</div>
+					<div class="card-num jc-sb g-t fl">
+						<span>5438</span><span>2343</span><span>0474</span><span>7324</span>
+					</div>
+					<div class="srok jc-sb fl">
+						<span class="t14 g-t">14/28</span>
+						<img src="img/cards/payoneer.png" alt="payoneer">
+					</div>
+				</div>
+
+				<div class="card">
+					<div class="colv">
+						<span class="t24">2.023172</span><span class="card-val upp-t">btc</span>
+						<a href="#" class="edit"><img src="img/cards/pen.png" alt="edit"></a>
+					</div>
+					<div class="card-num jc-sb g-t fl">
+						<span>6534</span><span>9823</span><span>9234</span><span>0347</span>
+					</div>
+					<div class="srok jc-sb fl">
+						<span class="t14 g-t">08/26</span>
+						<img src="img/cards/btc.png" alt="bitcoin">
+					</div>
+				</div>
+
+				<div class="card">
+					<div class="colv">
+						<span class="t24">50 000</span><span class="card-val upp-t">usd</span>
+						<a href="#" class="edit"><img src="img/cards/pen.png" alt="edit"></a>
+					</div>
+					<div class="card-num jc-sb g-t fl">
+						<span>2123</span><span>8732</span><span>2347</span><span>3478</span>
+					</div>
+					<div class="srok jc-sb fl">
+						<span class="t14 g-t">07/20</span>
+						<img src="img/cards/mastercard.png" alt="mastercard">
+					</div>
+				</div>
+			</div>
+
+			<section class="content fl">
+
+				<div class="left">
+
+					<div class="balance">
+						<div class="lab-c a-i-c jc-sb fl">
+							<span class="t16 b-t">Balance summary</span>
+							<div class="times t14 g-t">
+								<a href="#">Week</a>
+								<a href="#">Month</a>
+								<a href="#">Year</a>
+								<a href="#">Other</a>
+							</div>
+						</div>
+
+						<div id="chartdiv" style="width: 100%; height: 230px; background-color: #FFFFFF;">
+						</div>
+
+
+						<div class="total a-i-c fl b-t">
+							<p class="t14">Total balance:</p>
+							<p class="t25">29 480</p>
+							<a href="#" class="upp-t t16 fl">
+								<p class="int-val">usd</p>
+								<i class="fas fa-angle-down red-i"></i>
+							</a>
+						</div>
+					</div>
+
+					<div class="expence">
+						<div class="lab-c a-i-c jc-sb fl">
+							<span class="t16 b-t">Expense categories</span>
+							<div class="times t14 g-t">
+								<a href="#">Week</a>
+								<a href="#">Month</a>
+								<a href="#">Year</a>
+								<a href="#">Other</a>
+							</div>
+						</div>
+						<div class="cate jc-sb fl">
+							<div class="cate__left">
+								<div class="categor a-i-c fl">
+									<div class="circle brown"></div>
+									<span class="t16 b-t">25%</span>
+									<p class="t14 g-t">Vehicle and transport</p>
+								</div>
+								<div class="categor a-i-c fl">
+									<div class="circle pink"></div>
+									<span class="t16 b-t">23%</span>
+									<p class="t14 g-t">Groceries and food</p>
+								</div>
+								<div class="categor a-i-c fl">
+									<div class="circle black"></div>
+									<span class="t16 b-t">18%</span>
+									<p class="t14 g-t">Clothes and shoes</p>
+								</div>
+								<div class="categor a-i-c fl">
+									<div class="circle purple"></div>
+									<span class="t16 b-t">16%</span>
+									<p class="t14 g-t">Cafe and restaurants</p>
+								</div>
+								<div class="categor a-i-c fl">
+									<div class="circle blue"></div>
+									<span class="t16 b-t">15%</span>
+									<p class="t14 g-t">Mobile and internet</p>
+								</div>
+								<div class="categor a-i-c fl">
+									<div class="circle yellow"></div>
+									<span class="t16 b-t">10%</span>
+									<p class="t14 g-t">House and services</p>
+								</div>
+								<div class="categor a-i-c fl">
+									<div class="circle green"></div>
+									<span class="t16 b-t">9%</span>
+									<p class="t14 g-t">Other expenses</p>
+								</div>
+							</div>
+							<div class="cate__right">
+								<svg width="250" height="250" viewBox="0 0 42 42" class="donut">
+
+									  <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#c5b4a1" stroke-width="4" stroke-dasharray=" 25 75 " ></circle>
+
+									  <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#6e86f1" stroke-width="4" stroke-dasharray=" 13 87 " stroke-dashoffset=" 75 " > </circle>
+
+									  <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#f1ca30" stroke-width="4" stroke-dasharray=" 8 92 " stroke-dashoffset=" 62 " > </circle>
+
+									  <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#ff5384" stroke-width="4" stroke-dasharray=" 21 79 " stroke-dashoffset=" 54 " > </circle>
+
+									  <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#a178b6" stroke-width="4" stroke-dasharray=" 13 87 " stroke-dashoffset=" 33 " > </circle>
+
+									  <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#57c065" stroke-width="4" stroke-dasharray=" 8 92 " stroke-dashoffset=" 20 " > </circle>
+
+									  <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#525252" stroke-width="4" stroke-dasharray=" 13 87 " stroke-dashoffset=" 12 " > </circle>
+
+									  <g class="b-t">
+									    <text x="40%" y="52%" class="chart-label">
+									     - 6 567 
+									    </text>
+									    <text x="62%" y="52%" class="chart-label chart-val">
+									      USD
+									    </text>
+										<!-- <polygon xmlns="http://www.w3.org/2000/svg" points="47.25,15 45.164,12.914 25,33.078 4.836,12.914 2.75,15 25,37.25 "/> -->
+									  </g>
+
+								</svg>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+
+				<div class="right">
+
+					<div class="a-i-c jc-sb fl">
+						<span class="t16 b-t">Transaction history</span>
+						<div class="times drop t14 g-t">
+							<a href="#">Any currency<i class="fas fa-angle-down"></i></a>
+							<a href="#">All categories<i class="fas fa-angle-down"></i></a>
+						</div>	
+					</div>
+
+					<hr>
+
+					<p class="t14 b-t l-g-t">December 31</p>
+
+					<div class="transaction fl jc-sb">
+						<div class="left__trans fl">
+							<div class="trans__img">
+								<img src="img/history/food.png" alt="food">
+							</div>
+							<div class="trans__t fl">
+								<p class="b-t dg-t t14">”Food & Drinks” restaurant</p>
+								<p class="t12 g-t">Cafe and restaurants Card: ** 3478</p>
+							</div>
+						</div>
+						<div class="right__trans fl b-t">
+							<p class="t25">- 480</p>
+							<p class="upp-t g-t">uah</p>
+						</div>
+					</div>
+
+					<div class="transaction fl jc-sb">
+						<div class="left__trans fl">
+							<div class="trans__img">
+								<img src="img/history/store.png" alt="store">
+							</div>
+							<div class="trans__t fl">
+								<p class="b-t dg-t t14">”Walmart” store (Main Str. 13)</p>
+								<p class="t12 g-t">Groceries & food Card: ** 7813</p>
+							</div>
+						</div>
+						<div class="right__trans fl b-t">
+							<p class="t25">- 80</p>
+							<p class="upp-t g-t">usd</p>
+						</div>
+					</div>
+
+					<div class="transaction fl jc-sb">
+						<div class="left__trans fl">
+							<div class="trans__img_t"></div>
+							<div class="trans__t fl">
+								<p class="b-t dg-t t14">Transfer from <span class="blue-t cur-poin">Alexey</span></p>
+								<p class="t12 g-t">Transactions To card: ** 3478</p>
+							</div>
+						</div>
+						<div class="right__trans fl b-t">
+							<p class="t25 green-t">6 000</p>
+							<p class="upp-t g-t">uah</p>
+						</div>
+					</div>
+					
+					<p class="t14 b-t l-g-t date">December 29</p>
+
+					<div class="transaction fl jc-sb">
+						<div class="left__trans fl">
+							<div class="trans__img">
+								<img src="img/history/bag.png" alt="bag">
+							</div>
+							<div class="trans__t fl">
+								<p class="b-t dg-t t14">”Zara Man” store</p>
+								<p class="t12 g-t">Clothes & shoes Card: ** 7324</p>
+							</div>
+						</div>
+						<div class="right__trans fl b-t">
+							<p class="t25">- 230</p>
+							<p class="upp-t g-t">eur</p>
+						</div>
+					</div>
+
+					<div class="transaction fl jc-sb">
+						<div class="left__trans fl">
+							<div class="trans__img">
+								<img src="img/history/download.png" alt="download">
+							</div>
+							<div class="trans__t fl">
+								<p class="b-t dg-t t14">Replenishment from “iTerminal N861”</p>
+								<p class="t12 g-t">Transactions Card: ** 3478</p>
+							</div>
+						</div>
+						<div class="right__trans fl b-t">
+							<p class="t25 green-t">8 000</p>
+							<p class="upp-t g-t">uah</p>
+						</div>
+					</div>
+
+					<p class="t14 b-t l-g-t date">December 24</p>
+
+					<div class="transaction fl jc-sb">
+						<div class="left__trans fl">
+							<div class="trans__img">
+								<img src="img/history/car.png" alt="car">
+							</div>
+							<div class="trans__t fl">
+								<p class="b-t dg-t t14">”Shell” gas station (Street Ave. 24)</p>
+								<p class="t12 g-t">Vehicle & transport Card: ** 7324</p>
+							</div>
+						</div>
+						<div class="right__trans fl b-t">
+							<p class="t25">- 280</p>
+							<p class="upp-t g-t">eur</p>
+						</div>
+					</div>
+
+					<div class="transaction fl jc-sb">
+						<div class="left__trans fl">
+							<div class="trans__img">
+								<img src="img/history/wifi.png" alt="wifi">
+							</div>
+							<div class="trans__t fl">
+								<p class="b-t dg-t t14">Phone +380502338325 “Vodafone”</p>
+								<p class="t12 g-t">Mobile & internet Card: ** 3478</p>
+							</div>
+						</div>
+						<div class="right__trans fl b-t">
+							<p class="t25">- 301</p>
+							<p class="upp-t g-t">uah</p>
+						</div>
+					</div> 
+
+					<div class="transaction fl jc-sb">
+						<div class="left__trans fl">
+							<div class="trans__img">
+								<img src="img/history/flash.png" alt="wifi">
+							</div>
+							<div class="trans__t fl">
+								<p class="b-t dg-t t14">“General Electric” housing services </p>
+								<p class="t12 g-t">House and services Card: ** 7813</p>
+							</div>
+						</div>
+						<div class="right__trans fl b-t">
+							<p class="t25">- 540</p>
+							<p class="upp-t g-t">usd</p>
+						</div>
+					</div>
+
+				</div>
+
+			</section>
+
+		</section>
+	</main>
+</body>
+</html>
